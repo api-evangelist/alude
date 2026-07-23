@@ -1,7 +1,17 @@
 aid: alude
 name: Alude
-description: Alude is a company surfaced as a portfolio company of ribbit-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Alude is a Brazilian proptech (real estate technology) SaaS platform that digitizes
+  the day-to-day operations of imobiliárias (real estate agencies), brokers, and property
+  managers. Serving more than 20,000 agencies, the platform bundles rental management with
+  automated payment collection and reporting, instant CPF/CNPJ tenant background screening
+  (análise de ficha), legally valid electronic signatures without digital certificates,
+  fast fire-insurance (seguro incêndio) issuance, automated property capture and lead
+  generation, and capitalization bonds as an alternative to traditional rental deposits.
+  Alude is LGPD-compliant, free to try without a credit card, and backed by Ribbit Capital,
+  Y Combinator, Global Founders Capital, and MAYA Capital. It operates as an end-to-end
+  web application rather than a public API-first product; no developer portal, OpenAPI, or
+  public API surface was found during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/alude/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +19,57 @@ x-backed-by:
 - ribbit-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://cdn.sanity.io/images/68gmuo7j/landing_page/36d11cb4cee1c9d002e42c9f8a0fe5c4129f3335-89x18.svg
 tags:
 - Company
+- Real Estate
+- PropTech
+- SaaS
+- Property Management
+- Rental Management
+- Electronic Signature
+- Insurance
+- Brazil
+- Fintech
 apis: []
+common:
+- type: DomainSecurity
+  url: security/alude-domain-security.yml
+- type: Website
+  url: https://www.alude.com.br/
+- type: SignUp
+  url: https://app.alude.com.br
+- type: Login
+  url: https://app.alude.com.br
+- type: Pricing
+  url: https://www.alude.com.br/pricing
+- type: Blog
+  url: https://www.alude.com.br/blog
+- type: PrivacyPolicy
+  url: https://www.alude.com.br/termos-de-uso-de-politica-de-privacidade-e-de-tratamento-de-dados-pessoais.pdf
+- type: TermsOfService
+  url: https://www.alude.com.br/termos-de-uso-de-politica-de-privacidade-e-de-tratamento-de-dados-pessoais.pdf
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
